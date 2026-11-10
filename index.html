@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ============================================================
+       LUCAS EXPRESSO — SITE INSTITUCIONAL
+       Arquivo: index.html
+       Estrutura: Header | Home | Sobre | Serviços | Cidades |
+                  Galeria | Diferenciais | Evolução | Contato | Footer
+
+       COMO EDITAR ESTE SITE (resumo):
+       1. Textos provisórios estão marcados com a classe CSS
+          "placeholder" e/ou o comentário "CONTEÚDO PROVISÓRIO".
+       2. Fotos provisórias ficam na pasta /img e trazem o aviso
+          "SUBSTITUIR PELA FOTO OFICIAL".
+       3. Contatos: procure por "DADOS DE CONTATO" no index.html.
+       Veja o arquivo LEIA-ME.md para instruções completas.
+       ============================================================ -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO ===== -->
+  <title>Lucas Expresso | Confiança, Qualidade e Agilidade</title>
+  <meta name="description" content="Lucas Expresso — levando confiança, qualidade e agilidade até você. Conheça nossa história, nossos serviços, as cidades atendidas e entre em contato.">
+  <meta name="keywords" content="Lucas Expresso, transporte, entregas, logística, serviços, empresa">
+  <meta name="author" content="Lucas Expresso">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.lucasexpresso.com.br/">
+
+  <!-- ===== Redes sociais (Open Graph) ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Lucas Expresso">
+  <meta property="og:title" content="Lucas Expresso | Confiança, Qualidade e Agilidade">
+  <meta property="og:description" content="Levando confiança, qualidade e agilidade até você. Conheça a história e os serviços da Lucas Expresso.">
+  <meta property="og:image" content="img/hero-fundo.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ===== Ícone e fontes ===== -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ===== Folha de estilo ===== -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ===== Dados estruturados (Schema.org) — preencha com dados reais ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lucas Expresso",
+    "description": "Empresa Lucas Expresso — leve confiança, qualidade e agilidade até você.",
+    "url": "https://www.lucasexpresso.com.br/",
+    "logo": "img/logo.svg",
+    "telephone": "SUBSTITUIR PELO TELEFONE REAL",
+    "email": "SUBSTITUIR PELO E-MAIL REAL",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "SUBSTITUIR PELO ENDEREÇO REAL",
+      "addressLocality": "SUBSTITUIR PELA CIDADE",
+      "addressRegion": "SUBSTITUIR PELO ESTADO",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "SUBSTITUIR PELO LINK DO INSTAGRAM",
+      "SUBSTITUIR PELO LINK DO FACEBOOK"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Acessibilidade: link de pulo para o conteúdo -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <!-- ============================================================
+       HEADER / NAVEGAÇÃO
+       ============================================================ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <!-- Logo (versão branca no topo + versão colorida ao rolar) -->
+      <a href="#home" class="logo" aria-label="Lucas Expresso — página inicial">
+        <img class="logo__clara" src="img/logo-branco.svg" alt="Logotipo da Lucas Expresso" width="160" height="42">
+        <img class="logo__escura" src="img/logo.svg" alt="" aria-hidden="true" width="160" height="42">
+      </a>
+
+      <!-- Menu de navegação -->
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a class="nav__link active" href="#home">Início</a></li>
+          <li><a class="nav__link" href="#sobre">Sobre</a></li>
+          <li><a class="nav__link" href="#servicos">Serviços</a></li>
+          <li><a class="nav__link" href="#cidades">Cidades</a></li>
+          <li><a class="nav__link" href="#galeria">Galeria</a></li>
+          <li><a class="nav__link" href="#diferenciais">Diferenciais</a></li>
+          <li><a class="nav__link" href="#evolucao">Evolução</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+        <!-- CTA do menu -->
+        <!-- DADOS DE CONTATO: substitua pelo número real de WhatsApp -->
+        <a class="btn btn--primary nav__cta" href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Lucas%20Express."
+           target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5c.1-.2.2-.3.3-.5v-.5c0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+          Fale conosco
+        </a>
+      </nav>
+
+      <!-- Botão hambúrguer (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegação"
+              aria-expanded="false" aria-controls="nav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main id="conteudo">
+
+    <!-- ============================================================
+         1. HOME / HERO
+         ============================================================ -->
+    <section class="hero" id="home">
+      <!-- Imagem de destaque (substituir img/hero.svg por foto real) -->
+      <div class="hero__bg" role="img" aria-label="Imagem de destaque da Lucas Expresso"></div>
+      <div class="hero__overlay"></div>
+
+      <!-- Elementos decorativos de movimento -->
+      <div class="hero__shapes" aria-hidden="true">
+        <span class="hero__shape hero__shape--1"></span>
+        <span class="hero__shape hero__shape--2"></span>
+        <span class="hero__shape hero__shape--3"></span>
+      </div>
+
+      <div class="container hero__content">
+        <!-- Selo de credibilidade -->
+        <p class="hero__badge reveal">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1 14-3.5-3.5 1.4-1.4L11 13.2l4.6-4.6 1.4 1.4L11 16z"/></svg>
+          Profissionalismo • Confiança • Agilidade
+        </p>
+
+        <!-- Frase principal -->
+        <h1 class="hero__title reveal">
+          Levando <span class="text-gradient">confiança, qualidade</span><br>
+          e agilidade até você.
+        </h1>
+
+        <p class="hero__subtitle reveal">
+          <!-- CONTEÚDO PROVISÓRIO: adapte este texto à realidade da empresa -->
+          <span class="placeholder">Texto provisório.</span>
+          A Lucas Expresso nasceu para entregar soluções com compromisso,
+          pontualidade e um atendimento que coloca o cliente em primeiro lugar.
+          Conheça nossa história e descubra como podemos ajudar você.
+        </p>
+
+        <!-- Botões de ação -->
+        <div class="hero__actions reveal">
+          <a href="#sobre" class="btn btn--primary btn--lg">
+            Conheça nossa história
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16 6 10l1.4-1.4L12 13.2l4.6-4.6L18 10z"/></svg>
+          </a>
+          <a href="#contato" class="btn btn--outline btn--lg">
+            Entre em contato
+          </a>
+          <a href="#servicos" class="btn btn--ghost btn--lg">
+            Conheça nossos serviços
+          </a>
+        </div>
+
+        <!-- Indicadores visuais (sem números inventados) -->
+        <ul class="hero__highlights reveal" aria-label="Destaques da empresa">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-2h2zm1.8-6.2-.9.9c-.7.7-1.1 1.2-1.1 2.3h-2v-.5c0-.8.4-1.6 1.1-2.3l1.2-1.2c.4-.4.6-.9.5-1.5-.1-.6-.6-1.1-1.2-1.2-.9-.2-1.7.4-1.9 1.2H8.5A3.5 3.5 0 0 1 12 6.5a3.5 3.5 0 0 1 2.7 5.8z"/></svg>
+            Atendimento de confiança
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+            Agilidade em cada entrega
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1 14-3.5-3.5 1.4-1.4L11 13.2l4.6-4.6 1.4 1.4L11 16z"/></svg>
+            Compromisso e responsabilidade
+          </li>
+        </ul>
+      </div>
+
+      <!-- Indicador de rolagem -->
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+        <span class="hero__scroll-mouse" aria-hidden="true"><span></span></span>
+        <span class="hero__scroll-text">Role para descobrir</span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         2. SOBRE A EMPRESA
+         ============================================================ -->
+    <section class="section section--light" id="sobre">
+      <div class="container">
+
+        <!-- Cabeçalho da seção -->
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Sobre a Lucas Expresso</p>
+          <h2 class="section__title">Nossa história, escrita com <span class="text-gradient">dedicação</span></h2>
+          <p class="section__lead">
+            <!-- CONTEÚDO PROVISÓRIO -->
+            <span class="placeholder">Texto provisório — substituir pela história real da empresa.</span>
+            Cada empresa tem uma trajetória única. Aqui, contamos como a Lucas Expresso
+            surgiu, quais desafios enfrentou e como chegou até aqui.
+          </p>
+        </div>
+
+        <!-- Introdução + imagem -->
+        <div class="about__intro">
+          <div class="about__text reveal">
+            <h3>Como tudo começou</h3>
+            <p>
+              <!-- CONTEÚDO PROVISÓRIO -->
+              <span class="placeholder">[Ano de fundação]</span> — A Lucas Expresso deu seus primeiros passos
+              com um objetivo claro: oferecer um serviço sério, próximo do cliente e
+              comprometido com prazos e resultados.
+            </p>
+            <p>
+              <!-- CONTEÚDO PROVISÓRIO -->
+              Fundada por <span class="placeholder">[Nome do fundador]</span>, a empresa nasceu da motivação de
+              <span class="placeholder">[motivação para iniciar o negócio — texto provisório]</span>.
+              Nos primeiros dias, eram <span class="placeholder">[descrição dos primeiros passos — texto provisório]</span>.
+            </p>
+            <p>
+              Com trabalho duro e a confiança de quem acreditou no projeto, a Lucas Expresso
+              foi crescendo ano após ano. Hoje, a empresa se orgulha de
+              <span class="placeholder">[estrutura atual — texto provisório]</span> e olha para o futuro com
+              <span class="placeholder">[objetivos futuros — texto provisório]</span>.
+            </p>
+
+            <!-- Destaque de valores -->
+            <ul class="about__values">
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+                Compromisso com o cliente
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+                Crescimento construído com seriedade
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+                Olhar sempre voltado ao futuro
+              </li>
+            </ul>
+          </div>
+
+          <!-- Imagem com selo -->
+          <figure class="about__media reveal">
+            <img src="img/sobre-01.svg" alt="Imagem provisória dos primeiros passos da Lucas Expresso" loading="lazy" width="900" height="620">
+            <figcaption class="about__caption">
+              <span class="about__year">[Ano]</span>
+              <span>Primeiros passos da Lucas Expresso <em>(foto provisória)</em></span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- ===== Linha do tempo da história ===== -->
+        <div class="timeline">
+          <h3 class="timeline__title reveal">A trajetória da Lucas Expresso</h3>
+
+          <!-- Item 1 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">[Ano]</span>
+              <h4>O início de tudo</h4>
+              <p class="placeholder">
+                [Texto provisório] Conte como surgiu a empresa, quem foi o responsável pela
+                sua criação e qual foi a motivação para começar o negócio.
+              </p>
+              <img src="img/sobre-01.svg" alt="Foto provisória representando o início da empresa" loading="lazy" width="900" height="620">
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">[Ano]</span>
+              <h4>Os primeiros passos</h4>
+              <p class="placeholder">
+                [Texto provisório] Descreva como eram os primeiros dias de operação, os
+                primeiros atendimentos e a rotina daquele período.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">[Ano]</span>
+              <h4>Desafios superados</h4>
+              <p class="placeholder">
+                [Texto provisório] Quais foram os principais desafios enfrentados e como a
+                empresa conseguiu superá-los.
+              </p>
+              <img src="img/sobre-02.svg" alt="Foto provisória representando o crescimento da empresa" loading="lazy" width="900" height="620">
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">[Ano]</span>
+              <h4>Crescimento e consolidação</h4>
+              <p class="placeholder">
+                [Texto provisório] Conte como a empresa cresceu ao longo dos anos, ampliou
+                seus atendimentos e conquistou a confiança dos clientes.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 5 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">Hoje</span>
+              <h4>Onde estamos agora</h4>
+              <p class="placeholder">
+                [Texto provisório] Apresente como a empresa está estruturada atualmente:
+                equipe, veículos, estrutura física e forma de atendimento.
+              </p>
+              <img src="img/sobre-03.svg" alt="Foto provisória representando a estrutura atual da empresa" loading="lazy" width="900" height="620">
+            </div>
+          </article>
+
+          <!-- Item 6 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">Futuro</span>
+              <h4>Nossos objetivos</h4>
+              <p class="placeholder">
+                [Texto provisório] Quais são os planos e objetivos da Lucas Expresso para os
+                próximos anos.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. NOSSOS SERVIÇOS
+         ============================================================ -->
+    <section class="section section--dark" id="servicos">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <p class="section__eyebrow section__eyebrow--light">Nossos serviços</p>
+          <h2 class="section__title section__title--light">Soluções completas para <span class="text-gradient">as suas necessidades</span></h2>
+          <p class="section__lead section__lead--light">
+            <!-- CONTEÚDO PROVISÓRIO: os cards abaixo são exemplos de estrutura.
+                 Substitua nome, descrição e ícones pelos serviços reais da Lucas Expresso. -->
+            <span class="placeholder">Conteúdo provisório.</span>
+            Conheça os serviços prestados pela Lucas Expresso. Os cards estão prontos para
+            serem editados conforme as atividades reais da empresa.
+          </p>
+        </div>
+
+        <div class="cards cards--services">
+
+          <!-- Card 1 -->
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v9H3zM14 9h4l3 3.5V15h-7z"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/><path d="M1 15h4M9 15h4" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <h3 class="card__title">[Nome do serviço 01]</h3>
+            <p class="card__text placeholder">
+              [Descrição provisória] Explique de forma clara o que este serviço oferece,
+              para quem é indicado e quais são os seus benefícios.
+            </p>
+            <a class="card__link" href="#contato">Solicitar orçamento
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12l-4.5-4.5L14 6l7 6-7 6-1.5-1.5L17 12H5z"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5V11c0 5.2 3.4 9.9 8 11 4.6-1.1 8-5.8 8-11V5.5z"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3 class="card__title">[Nome do serviço 02]</h3>
+            <p class="card__text placeholder">
+              [Descrição provisória] Explique de forma clara o que este serviço oferece,
+              para quem é indicado e quais são os seus benefícios.
+            </p>
+            <a class="card__link" href="#contato">Solicitar orçamento
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12l-4.5-4.5L14 6l7 6-7 6-1.5-1.5L17 12H5z"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3 class="card__title">[Nome do serviço 03]</h3>
+            <p class="card__text placeholder">
+              [Descrição provisória] Explique de forma clara o que este serviço oferece,
+              para quem é indicado e quais são os seus benefícios.
+            </p>
+            <a class="card__link" href="#contato">Solicitar orçamento
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12l-4.5-4.5L14 6l7 6-7 6-1.5-1.5L17 12H5z"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a2 2 0 0 0-2 2v11h2a3 3 0 0 0 6 0h6a3 3 0 0 0 6 0h2v-5zM7 18.5A1.5 1.5 0 1 1 8.5 17 1.5 1.5 0 0 1 7 18.5zm12 0A1.5 1.5 0 1 1 20.5 17 1.5 1.5 0 0 1 19 18.5zM17 12V9.5h2.2l1.8 2.5z"/></svg>
+            </div>
+            <h3 class="card__title">[Nome do serviço 04]</h3>
+            <p class="card__text placeholder">
+              [Descrição provisória] Explique de forma clara o que este serviço oferece,
+              para quem é indicado e quais são os seus benefícios.
+            </p>
+            <a class="card__link" href="#contato">Solicitar orçamento
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12l-4.5-4.5L14 6l7 6-7 6-1.5-1.5L17 12H5z"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 8l10 5 8-4v6h2V8zM4 12.5V17c0 1.7 3.6 3.5 8 3.5s8-1.8 8-3.5v-4.5l-8 4z"/></svg>
+            </div>
+            <h3 class="card__title">[Nome do serviço 05]</h3>
+            <p class="card__text placeholder">
+              [Descrição provisória] Explique de forma clara o que este serviço oferece,
+              para quem é indicado e quais são os seus benefícios.
+            </p>
+            <a class="card__link" href="#contato">Solicitar orçamento
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12l-4.5-4.5L14 6l7 6-7 6-1.5-1.5L17 12H5z"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3.3-7"/><path d="M8 12.5 11 15l6-6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3 class="card__title">[Nome do serviço 06]</h3>
+            <p class="card__text placeholder">
+              [Descrição provisória] Explique de forma clara o que este serviço oferece,
+              para quem é indicado e quais são os seus benefícios.
+            </p>
+            <a class="card__link" href="#contato">Solicitar orçamento
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12l-4.5-4.5L14 6l7 6-7 6-1.5-1.5L17 12H5z"/></svg>
+            </a>
+          </article>
+
+        </div>
+
+        <!-- Chamada para ação -->
+        <div class="section__cta reveal">
+          <p>Não encontrou o que procura? Fale com a gente e descubra como podemos ajudar.</p>
+          <a href="#contato" class="btn btn--primary btn--lg">Falar com a Lucas Expresso</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. CIDADES ATENDIDAS
+         ============================================================ -->
+    <section class="section section--light" id="cidades">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Cidades atendidas</p>
+          <h2 class="section__title">Onde a Lucas Expresso <span class="text-gradient">chega</span></h2>
+          <p class="section__lead">
+            <!-- CONTEÚDO PROVISÓRIO: não foram inventadas cidades. -->
+            <span class="placeholder">Conteúdo provisório — adicione as cidades reais atendidas.</span>
+            Nossa área de atendimento está sempre em expansão. Confira abaixo as regiões
+            e cidades atendidas pela Lucas Expresso.
+          </p>
+        </div>
+
+        <!-- Destaque de abrangência -->
+        <div class="coverage__banner reveal">
+          <div class="coverage__banner-icon" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+          </div>
+          <p>
+            <strong>Abrangência de atendimento:</strong>
+            <span class="placeholder">[mensagem provisória sobre a área de cobertura]</span>
+            — atendemos diversas cidades da região com agilidade e compromisso.
+            Consulte se a sua cidade está na nossa rota!
+          </p>
+        </div>
+
+        <!-- Mapa + lista de cidades -->
+        <div class="coverage__grid">
+
+          <!-- Mapa ilustrativo -->
+          <figure class="coverage__map reveal">
+            <img src="img/mapa-cobertura.svg" alt="Mapa ilustrativo da área de cobertura da Lucas Expresso" loading="lazy" width="1200" height="760">
+            <figcaption>Mapa ilustrativo da área de cobertura <em>(imagem provisória)</em></figcaption>
+          </figure>
+
+          <!-- Regiões / cidades (espaços reservados) -->
+          <div class="coverage__regions">
+
+            <article class="region reveal">
+              <div class="region__head">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+                <h3>[Região 01]</h3>
+              </div>
+              <ul class="region__list placeholder">
+                <li>[Cidade 01]</li>
+                <li>[Cidade 02]</li>
+                <li>[Cidade 03]</li>
+                <li>[Cidade 04]</li>
+              </ul>
+            </article>
+
+            <article class="region reveal">
+              <div class="region__head">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+                <h3>[Região 02]</h3>
+              </div>
+              <ul class="region__list placeholder">
+                <li>[Cidade 05]</li>
+                <li>[Cidade 06]</li>
+                <li>[Cidade 07]</li>
+                <li>[Cidade 08]</li>
+              </ul>
+            </article>
+
+            <article class="region reveal">
+              <div class="region__head">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+                <h3>[Região 03]</h3>
+              </div>
+              <ul class="region__list placeholder">
+                <li>[Cidade 09]</li>
+                <li>[Cidade 10]</li>
+                <li>[Cidade 11]</li>
+                <li>[Cidade 12]</li>
+              </ul>
+            </article>
+
+            <article class="region reveal">
+              <div class="region__head">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+                <h3>[Região 04]</h3>
+              </div>
+              <ul class="region__list placeholder">
+                <li>[Cidade 13]</li>
+                <li>[Cidade 14]</li>
+                <li>[Cidade 15]</li>
+                <li>[Cidade 16]</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- CTA cidades -->
+        <div class="section__cta reveal">
+          <p>Sua cidade não está na lista? <strong>Fale conosco</strong> — podemos atender novas regiões.</p>
+          <a href="#contato" class="btn btn--dark btn--lg">Consultar atendimento</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. GALERIA DE FOTOS
+         ============================================================ -->
+    <section class="section section--gallery" id="galeria">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <p class="section__eyebrow section__eyebrow--light">Galeria de fotos</p>
+          <h2 class="section__title section__title--light">A Lucas Expresso <span class="text-gradient">em imagens</span></h2>
+          <p class="section__lead section__lead--light">
+            <span class="placeholder">Fotos provisórias.</span>
+            Veja momentos da nossa operação: veículos, equipe, estrutura e o dia a dia de
+            trabalho. Clique em qualquer imagem para ampliar.
+          </p>
+        </div>
+
+        <!-- Filtros da galeria (opcionais) -->
+        <div class="gallery__filters reveal" role="group" aria-label="Filtrar fotos da galeria">
+          <button class="gallery__filter is-active" data-filter="todas">Todas</button>
+          <button class="gallery__filter" data-filter="frota">Frota</button>
+          <button class="gallery__filter" data-filter="equipe">Equipe</button>
+          <button class="gallery__filter" data-filter="estrutura">Estrutura</button>
+          <button class="gallery__filter" data-filter="operacao">Operação</button>
+        </div>
+
+        <!-- Grade da galeria -->
+        <div class="gallery" id="gallery">
+
+          <figure class="gallery__item reveal" data-category="frota">
+            <img src="img/galeria-01.svg" alt="Foto provisória — veículos da frota da Lucas Expresso" loading="lazy" width="900" height="700">
+            <figcaption>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" opacity=".3"/><circle cx="9" cy="10" r="2"/><path d="m4 18 5-5 3 3 3-3 5 5z"/></svg>
+              <span>Veículos da frota</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="equipe">
+            <img src="img/galeria-02.svg" alt="Foto provisória — equipe de trabalho da Lucas Expresso" loading="lazy" width="900" height="700">
+            <figcaption>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" opacity=".3"/><circle cx="9" cy="10" r="2"/><path d="m4 18 5-5 3 3 3-3 5 5z"/></svg>
+              <span>Equipe de trabalho</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--tall reveal" data-category="estrutura">
+            <img src="img/galeria-03.svg" alt="Foto provisória — estrutura da Lucas Expresso" loading="lazy" width="900" height="700">
+            <figcaption>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" opacity=".3"/><circle cx="9" cy="10" r="2"/><path d="m4 18 5-5 3 3 3-3 5 5z"/></svg>
+              <span>Estrutura da empresa</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="operacao">
+            <img src="img/galeria-04.svg" alt="Foto provisória — operação e entregas da Lucas Expresso" loading="lazy" width="900" height="700">
+            <figcaption>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" opacity=".3"/><circle cx="9" cy="10" r="2"/><path d="m4 18 5-5 3 3 3-3 5 5z"/></svg>
+              <span>Operação e entregas</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="operacao">
+            <img src="img/galeria-05.svg" alt="Foto provisória — rotina de trabalho da Lucas Expresso" loading="lazy" width="900" height="700">
+            <figcaption>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" opacity=".3"/><circle cx="9" cy="10" r="2"/><path d="m4 18 5-5 3 3 3-3 5 5z"/></svg>
+              <span>Rotina de trabalho</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="equipe">
+            <img src="img/galeria-06.svg" alt="Foto provisória — momentos importantes da trajetória da Lucas Expresso" loading="lazy" width="900" height="700">
+            <figcaption>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" opacity=".3"/><circle cx="9" cy="10" r="2"/><path d="m4 18 5-5 3 3 3-3 5 5z"/></svg>
+              <span>Momentos importantes</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="estrutura">
+            <img src="img/galeria-07.svg" alt="Foto provisória — atendimento ao cliente da Lucas Expresso" loading="lazy" width="900" height="700">
+            <figcaption>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" opacity=".3"/><circle cx="9" cy="10" r="2"/><path d="m4 18 5-5 3 3 3-3 5 5z"/></svg>
+              <span>Atendimento ao cliente</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="frota">
+            <img src="img/galeria-08.svg" alt="Foto provisória — detalhes da operação da Lucas Expresso" loading="lazy" width="900" height="700">
+            <figcaption>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" opacity=".3"/><circle cx="9" cy="10" r="2"/><path d="m4 18 5-5 3 3 3-3 5 5z"/></svg>
+              <span>Detalhes da operação</span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. DIFERENCIAIS DA EMPRESA
+         ============================================================ -->
+    <section class="section section--light" id="diferenciais">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Diferenciais</p>
+          <h2 class="section__title">Por que escolher a <span class="text-gradient">Lucas Expresso</span></h2>
+          <p class="section__lead">
+            <span class="placeholder">Conteúdo provisório — mantenha apenas os diferenciais reais da empresa.</span>
+            Valores que orientam cada atendimento e fazem a diferença na hora de escolher
+            quem confiar.
+          </p>
+        </div>
+
+        <div class="features">
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.6-9 9-9 9z"/></svg>
+            </div>
+            <h3>Compromisso com o cliente</h3>
+            <p>O cliente no centro de cada decisão, com respeito, transparência e atenção em todas as etapas.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+            </div>
+            <h3>Agilidade no atendimento</h3>
+            <p>Respostas rápidas e soluções objetivas para que você não perca tempo nem oportunidades.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5V11c0 5.2 3.4 9.9 8 11 4.6-1.1 8-5.8 8-11V5.5z"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3>Responsabilidade</h3>
+            <p>Compromissos assumidos são cumpridos, com cuidado em cada detalhe e em cada entrega.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 15 9l7 .5-5.4 4.6L18.2 21 12 17.3 5.8 21l1.6-6.9L2 9.5 9 9z"/></svg>
+            </div>
+            <h3>Profissionalismo</h3>
+            <p>Uma equipe preparada, processos organizados e uma postura séria em todos os relacionamentos.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5v3H5v12h14V10h-2V7a5 5 0 0 0-5-5zm3 8H9V7a3 3 0 0 1 6 0z"/></svg>
+            </div>
+            <h3>Qualidade nos serviços</h3>
+            <p>Padrões elevados de qualidade do início ao fim, porque o resultado final é a nossa apresentação.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5z"/></svg>
+            </div>
+            <h3>Atendimento personalizado</h3>
+            <p>Cada cliente tem necessidades únicas — e é assim que tratamos cada solicitação.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.2 7.1-5.4 5.4a1 1 0 0 1-1.4 0L7.8 13a1 1 0 0 1 1.4-1.4l1.1 1.1 4.7-4.7a1 1 0 0 1 1.4 1.4z"/></svg>
+            </div>
+            <h3>Dedicação em cada detalhe</h3>
+            <p>Capricho, cuidado e presença constante para entregar sempre o melhor resultado.</p>
+          </article>
+
+          <article class="feature feature--cta reveal">
+            <h3>Quer conhecer de perto?</h3>
+            <p>Converse com nossa equipe e descubra como podemos ajudar você ou a sua empresa.</p>
+            <a href="#contato" class="btn btn--primary">Fale conosco</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. NOSSA EVOLUÇÃO
+         ============================================================ -->
+    <section class="section section--dark" id="evolucao">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <p class="section__eyebrow section__eyebrow--light">Nossa evolução</p>
+          <h2 class="section__title section__title--light">De onde viemos e <span class="text-gradient">para onde vamos</span></h2>
+          <p class="section__lead section__lead--light">
+            <span class="placeholder">Conteúdo provisório — adicione os marcos reais da empresa.</span>
+            Marcos importantes que contam a história de crescimento da Lucas Expresso.
+          </p>
+        </div>
+
+        <!-- Linha do tempo de evolução (horizontal) -->
+        <ol class="evolution">
+          <li class="evolution__item reveal">
+            <div class="evolution__media">
+              <img src="img/evolucao-01.svg" alt="Foto provisória — fundação e primeiros passos da Lucas Expresso" loading="lazy" width="900" height="620">
+            </div>
+            <div class="evolution__body">
+              <span class="evolution__year">[Ano de fundação]</span>
+              <h3>Fundação e primeiros passos</h3>
+              <p class="placeholder">
+                [Texto provisório] Conte como a empresa foi fundada e como foram os primeiros
+                dias de operação.
+              </p>
+            </div>
+          </li>
+
+          <li class="evolution__item reveal">
+            <div class="evolution__media">
+              <img src="img/evolucao-02.svg" alt="Foto provisória — primeiros clientes e conquistas da Lucas Expresso" loading="lazy" width="900" height="620">
+            </div>
+            <div class="evolution__body">
+              <span class="evolution__year">[Ano]</span>
+              <h3>Primeiros clientes e conquistas</h3>
+              <p class="placeholder">
+                [Texto provisório] Registre os primeiros clientes, as primeiras conquistas e
+                os marcos importantes desse período.
+              </p>
+            </div>
+          </li>
+
+          <li class="evolution__item reveal">
+            <div class="evolution__media">
+              <img src="img/evolucao-03.svg" alt="Foto provisória — expansão dos atendimentos da Lucas Expresso" loading="lazy" width="900" height="620">
+            </div>
+            <div class="evolution__body">
+              <span class="evolution__year">[Ano]</span>
+              <h3>Expansão dos atendimentos</h3>
+              <p class="placeholder">
+                [Texto provisório] Fale sobre a expansão das cidades atendidas, novos
+                veículos ou equipamentos e o crescimento da equipe.
+              </p>
+            </div>
+          </li>
+
+          <li class="evolution__item reveal">
+            <div class="evolution__media">
+              <img src="img/evolucao-04.svg" alt="Foto provisória — conquistas recentes e cenário atual da Lucas Expresso" loading="lazy" width="900" height="620">
+            </div>
+            <div class="evolution__body">
+              <span class="evolution__year">Atualidade</span>
+              <h3>Conquistas recentes e próximos passos</h3>
+              <p class="placeholder">
+                [Texto provisório] Apresente as conquistas mais recentes e os planos para o
+                futuro da Lucas Expresso.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. CONTATO
+         ============================================================ -->
+    <section class="section section--contact" id="contato">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Contato</p>
+          <h2 class="section__title">Vamos conversar? <span class="text-gradient">Estamos à disposição</span></h2>
+          <p class="section__lead">
+            Fale com a Lucas Expresso pelo canal de sua preferência. Nossa equipe está pronta
+            para atender você com agilidade e atenção.
+          </p>
+        </div>
+
+        <div class="contact">
+
+          <!-- ===== Coluna de informações ===== -->
+          <div class="contact__info">
+
+            <!-- DADOS DE CONTATO: substitua todos os campos abaixo pelos dados reais -->
+            <article class="contact__card reveal">
+              <div class="contact__card-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5z"/></svg>
+              </div>
+              <div>
+                <h3>Responsável</h3>
+                <p class="placeholder">[Nome do responsável]</p>
+              </div>
+            </article>
+
+            <article class="contact__card reveal">
+              <div class="contact__card-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>
+              </div>
+              <div>
+                <h3>Telefone</h3>
+                <p class="placeholder"><a href="tel:+5500000000000">[Telefone da empresa]</a></p>
+              </div>
+            </article>
+
+            <article class="contact__card reveal">
+              <div class="contact__card-icon contact__card-icon--whats">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5c.1-.2.2-.3.3-.5v-.5c0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+              </div>
+              <div>
+                <h3>WhatsApp</h3>
+                <p class="placeholder">
+                  <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">[Número de WhatsApp]</a>
+                </p>
+              </div>
+            </article>
+
+            <article class="contact__card reveal">
+              <div class="contact__card-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2 8-5.2H4z"/><path d="m4 8.4 8 5.2 8-5.2V18H4z"/></svg>
+              </div>
+              <div>
+                <h3>E-mail</h3>
+                <p class="placeholder"><a href="mailto:contato@exemplo.com.br">[E-mail da empresa]</a></p>
+              </div>
+            </article>
+
+            <article class="contact__card reveal">
+              <div class="contact__card-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+              </div>
+              <div>
+                <h3>Endereço</h3>
+                <p class="placeholder">[Endereço da empresa — se houver]</p>
+              </div>
+            </article>
+
+            <article class="contact__card reveal">
+              <div class="contact__card-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2"/></svg>
+              </div>
+              <div>
+                <h3>Redes sociais</h3>
+                <div class="contact__social">
+                  <!-- DADOS DE CONTATO: substitua pelos links reais -->
+                  <a href="#" aria-label="Instagram da Lucas Expresso" title="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2"/></svg>
+                  </a>
+                  <a href="#" aria-label="Facebook da Lucas Expresso" title="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M14 9h3V6h-3a4 4 0 0 0-4 4v2H8v3h2v7h3v-7h2.5l.5-3H13v-2a1 1 0 0 1 1-1z"/></svg>
+                  </a>
+                  <a href="#" aria-label="Site ou canal adicional da Lucas Expresso" title="Outro canal">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Botão destaque WhatsApp -->
+            <!-- DADOS DE CONTATO: substitua pelo número real (formato: 55 + DDD + número) -->
+            <a class="btn btn--whatsapp btn--lg reveal"
+               href="https://wa.me/5500000000000?text=Olá!%20Vim%20pelo%20site%20da%20Lucas%20Express%20e%20gostaria%20de%20mais%20informações."
+               target="_blank" rel="noopener noreferrer">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5c.1-.2.2-.3.3-.5v-.5c0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+              Chamar no WhatsApp
+            </a>
+          </div>
+
+          <!-- ===== Formulário de contato ===== -->
+          <div class="contact__form-wrapper reveal">
+            <h3>Envie uma mensagem</h3>
+            <p class="contact__form-lead">Preencha o formulário e nossa equipe entrará em contato.</p>
+
+            <!--
+              INTEGRAÇÃO DO FORMULÁRIO (importante):
+              Este formulário NÃO envia mensagens por conta própria, de propósito.
+              Para ativar o envio, escolha UMA opção:
+              (a) Serviço externo (Formspree, Getform, Basin etc.):
+                  preencha o atributo action="https://formspree.io/f/SEU-ID"
+                  e mantenha method="post".
+              (b) Backend próprio:
+                  remova o novalidate? não — mantenha; edite o script.js na função
+                  enviarFormulario() para usar fetch() apontando para a sua API.
+              Enquanto isso não for feito, o formulário apenas valida os campos.
+            -->
+            <form class="form" id="form-contato" novalidate action="#" method="post">
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="nome">Nome <span aria-hidden="true">*</span></label>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome completo"
+                         autocomplete="name" required aria-required="true">
+                  <span class="form__error" id="erro-nome" role="alert"></span>
+                </div>
+
+                <div class="form__field">
+                  <label for="telefone">Telefone <span aria-hidden="true">*</span></label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000"
+                         autocomplete="tel" inputmode="numeric" required aria-required="true">
+                  <span class="form__error" id="erro-telefone" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="email">E-mail <span aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com.br"
+                         autocomplete="email" required aria-required="true">
+                  <span class="form__error" id="erro-email" role="alert"></span>
+                </div>
+
+                <div class="form__field">
+                  <label for="assunto">Assunto <span aria-hidden="true">*</span></label>
+                  <select id="assunto" name="assunto" required aria-required="true">
+                    <option value="">Selecione um assunto</option>
+                    <option value="orcamento">Orçamento de serviços</option>
+                    <option value="informacoes">Informações gerais</option>
+                    <option value="cidades">Cidades atendidas</option>
+                    <option value="parceria">Parcerias e fornecedores</option>
+                    <option value="outros">Outros assuntos</option>
+                  </select>
+                  <span class="form__error" id="erro-assunto" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form__field">
+                <label for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."
+                          required aria-required="true"></textarea>
+                <span class="form__error" id="erro-mensagem" role="alert"></span>
+              </div>
+
+              <!-- Acessibilidade: campo oculto anti-spam -->
+              <input type="text" name="_honey" class="form__honey" tabindex="-1" aria-hidden="true" autocomplete="off">
+
+              <button type="submit" class="btn btn--primary btn--lg form__submit">
+                <span class="form__submit-text">Enviar mensagem</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 21 23 12 2 3l4 9zM6 12h13"/></svg>
+              </button>
+
+              <!-- Feedback do formulário -->
+              <p class="form__feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+       ============================================================ -->
+  <footer class="footer">
+    <!-- Faixa decorativa -->
+    <div class="footer__wave" aria-hidden="true"></div>
+
+    <div class="container footer__grid">
+
+      <!-- Coluna 1: marca -->
+      <div class="footer__brand">
+        <img src="img/logo.svg" alt="Logotipo da Lucas Expresso" class="footer__logo" width="180" height="47">
+        <p>
+          <!-- CONTEÚDO PROVISÓRIO -->
+          <span class="placeholder">Descrição provisória.</span>
+          Lucas Expresso — levando confiança, qualidade e agilidade até você.
+          Uma empresa feita de compromisso, trabalho sério e atendimento próximo.
+        </p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram da Lucas Expresso" title="Instagram">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook da Lucas Expresso" title="Facebook">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M14 9h3V6h-3a4 4 0 0 0-4 4v2H8v3h2v7h3v-7h2.5l.5-3H13v-2a1 1 0 0 1 1-1z"/></svg>
+          </a>
+          <!-- DADOS DE CONTATO: substitua pelo link real do WhatsApp -->
+          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Lucas Expresso" title="WhatsApp">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5c.1-.2.2-.3.3-.5v-.5c0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Coluna 2: navegação -->
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre a empresa</a></li>
+          <li><a href="#servicos">Nossos serviços</a></li>
+          <li><a href="#cidades">Cidades atendidas</a></li>
+          <li><a href="#galeria">Galeria de fotos</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#evolucao">Nossa evolução</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Coluna 3: serviços (exemplos de atalhos) -->
+      <nav class="footer__nav" aria-label="Links de serviços">
+        <h3>Serviços</h3>
+        <ul>
+          <li><a href="#servicos">[Serviço 01]</a></li>
+          <li><a href="#servicos">[Serviço 02]</a></li>
+          <li><a href="#servicos">[Serviço 03]</a></li>
+          <li><a href="#servicos">[Serviço 04]</a></li>
+          <li><a href="#contato">Solicitar orçamento</a></li>
+        </ul>
+      </nav>
+
+      <!-- Coluna 4: contato -->
+      <div class="footer__contact">
+        <h3>Contato</h3>
+        <!-- DADOS DE CONTATO: substitua pelos dados reais -->
+        <ul>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>
+            <a href="tel:+5500000000000">[Telefone da empresa]</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2 8-5.2H4z"/><path d="m4 8.4 8 5.2 8-5.2V18H4z"/></svg>
+            <a href="mailto:contato@exemplo.com.br">[E-mail da empresa]</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+            <span class="placeholder">[Endereço da empresa]</span>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <span class="placeholder">[Horário de atendimento]</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Barra final -->
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="ano-atual">2026</span> Lucas Expresso. Todos os direitos reservados.</p>
+        <p class="footer__credits">Site institucional Lucas Expresso</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       ELEMENTOS FLUTUANTES
+       ============================================================ -->
+
+  <!-- Botão flutuante de WhatsApp -->
+  <!-- DADOS DE CONTATO: substitua 5500000000000 pelo número real (55 + DDD + número) -->
+  <a class="float-whats"
+     href="https://wa.me/5500000000000?text=Olá!%20Vim%20pelo%20site%20da%20Lucas%20Express."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Falar com a Lucas Expresso pelo WhatsApp">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5c.1-.2.2-.3.3-.5v-.5c0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+    <span class="float-whats__label">Fale conosco</span>
+  </a>
+
+  <!-- Botão voltar ao topo -->
+  <button class="float-top" id="btn-topo" aria-label="Voltar ao topo da página">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6 5 13l1.4 1.4L11 9.8V20h2V9.8l4.6 4.6L19 13z"/></svg>
+  </button>
+
+  <!-- ============================================================
+       LIGHTBOX (ampliação de imagens da galeria)
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagens" hidden>
+    <div class="lightbox__backdrop" data-lightbox-close></div>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightbox-img" src="" alt="">
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__btn--close" data-lightbox-close aria-label="Fechar visualizador">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__btn--prev" id="lightbox-prev" aria-label="Imagem anterior">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__btn--next" id="lightbox-next" aria-label="Próxima imagem">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <!-- JavaScript do site -->
+  <script src="script.js"></script>
+</body>
+</html>

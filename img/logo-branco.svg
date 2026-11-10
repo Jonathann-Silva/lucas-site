@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" role="img" aria-label="Logotipo Lucas Expresso - versão clara (provisório)">
+  <!-- ============================================================
+       LOGO PROVISÓRIO - LUCAS EXPRESSO — VERSÃO CLARA (BRANCA)
+       Usada no cabeçalho quando o site está no topo (sobre o fundo
+       escuro do hero). A versão colorida padrão é o img/logo.svg.
+       ============================================================ -->
+  <defs>
+    <linearGradient id="lg-azul" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E7CF6"/>
+      <stop offset="1" stop-color="#0A2240"/>
+    </linearGradient>
+    <linearGradient id="lg-amarelo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFC24B"/>
+      <stop offset="1" stop-color="#F5820B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Símbolo -->
+  <g>
+    <rect x="8" y="16" width="88" height="88" rx="22" fill="url(#lg-azul)" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
+    <!-- linhas de velocidade -->
+    <rect x="20" y="34" width="30" height="5" rx="2.5" fill="url(#lg-amarelo)"/>
+    <rect x="26" y="45" width="22" height="5" rx="2.5" fill="url(#lg-amarelo)" opacity="0.7"/>
+    <!-- caminhão estilizado -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 74V58h30v16z"/>
+      <path d="M52 62h11l9 8v4H52z"/>
+    </g>
+    <circle cx="34" cy="80" r="6" fill="#FFFFFF"/>
+    <circle cx="64" cy="80" r="6" fill="url(#lg-amarelo)"/>
+  </g>
+
+  <!-- Tipografia: LUCAS EXPRESSO (branca para fundos escuros) -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="118" y="62" font-size="42" font-weight="700" letter-spacing="2" fill="#FFFFFF">LUCAS</text>
+    <text x="118" y="98" font-size="31" font-weight="600" letter-spacing="5" fill="#FFFFFF">EXPRESSO</text>
+    <rect x="118" y="70" width="228" height="3" rx="1.5" fill="url(#lg-amarelo)"/>
+  </g>
+</svg>

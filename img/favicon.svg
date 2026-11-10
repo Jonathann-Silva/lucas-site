@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ícone Lucas Expresso (provisório)">
+  <defs>
+    <linearGradient id="fv" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E7CF6"/>
+      <stop offset="1" stop-color="#0A2240"/>
+    </linearGradient>
+    <linearGradient id="fa" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFC24B"/>
+      <stop offset="1" stop-color="#F5820B"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#fv)"/>
+  <rect x="10" y="16" width="22" height="4" rx="2" fill="url(#fa)"/>
+  <rect x="15" y="24" width="16" height="4" rx="2" fill="url(#fa)" opacity="0.7"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 42V29h22v13z"/>
+    <path d="M34 32h8l7 6v4h-15z"/>
+  </g>
+  <circle cx="21" cy="47" r="4.6" fill="#FFFFFF"/>
+  <circle cx="43" cy="47" r="4.6" fill="url(#fa)"/>
+</svg>

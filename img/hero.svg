@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Imagem provisória - Imagem de capa da Home - Lucas Expresso">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12406F"/>
+      <stop offset="1" stop-color="#0A2240"/>
+    </linearGradient>
+    <pattern id="dots" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#ffffff" opacity="0.10"/>
+    </pattern>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F5A524" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#F5A524" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#F5A524" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <circle cx="1334" cy="128" r="400" fill="#2E7CF6" opacity="0.16"/>
+  <circle cx="200" cy="788" r="266" fill="#F5A524" opacity="0.12"/>
+  <path d="M0 720 L 1600 600 L 1600 900 L 0 900 Z" fill="#061428" opacity="0.35"/>
+  <g transform="translate(722, 342) scale(2.6)" fill="none" stroke="#F5A524" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <rect x="1" y="10" width="34" height="18" rx="2.5"/>
+    <path d="M35 15h8.2l5.8 6.4V28H35z"/>
+    <circle cx="11" cy="30.5" r="3.6"/>
+    <circle cx="41" cy="30.5" r="3.6"/>
+    <path d="M1 28h6.4M14.6 28h22.8"/>
+    <path d="M38 18h4.5l2.6 3H38z"/>
+    <path d="M4 15h12M4 20h9" opacity="0.5"/>
+  </g>
+  <rect x="650" y="452" width="300" height="3" fill="url(#band)"/>
+  <text x="50%" y="502" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="4" fill="#FFFFFF" opacity="0.92">FOTO DE DESTAQUE</text>
+  <text x="50%" y="538" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="38" fill="#BFD3EA" opacity="0.9">Imagem de capa da Home - Lucas Expresso</text>
+  <text x="50%" y="574" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" letter-spacing="2" fill="#F5A524" opacity="0.85">SUBSTITUIR PELA FOTO OFICIAL</text>
+</svg>

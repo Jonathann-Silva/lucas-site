@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Fundo artístico Lucas Expresso — motoboy em movimento">
+  <!-- ============================================================
+       FUNDO ARTÍSTICO — LUCAS EXPRESSO
+       Arte vetorial redesenhada a partir da identidade visual da
+       empresa (moto, cores azul/branco/amarelo, estilo urbano,
+       hexágonos e movimento), preparada para uso como imagem de
+       fundo (hero) do site. 1600 x 900 px, escalável sem perda.
+
+       Para ajustar: cores nos <defs>, posições dos grupos
+       "moto-e-motoboy", "hexagonos" e "linhas-de-velocidade".
+       ============================================================ -->
+  <defs>
+    <!-- Fundo escuro urbano -->
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="0.55" stop-color="#101C2E"/>
+      <stop offset="1" stop-color="#080D17"/>
+    </linearGradient>
+
+    <!-- Textura sutil de linhas diagonais -->
+    <pattern id="textura" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <rect width="46" height="46" fill="none"/>
+      <path d="M0 0V46" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="2"/>
+    </pattern>
+
+    <!-- Brilhos de ambiente -->
+    <radialGradient id="brilhoAzul" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2E7CF6" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#2E7CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="brilhoAmarelo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F5B93B" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#F5B93B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Degradês da moto -->
+    <linearGradient id="corpoMoto" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2C46"/>
+      <stop offset="1" stop-color="#0D1727"/>
+    </linearGradient>
+    <linearGradient id="capacete" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22385A"/>
+      <stop offset="1" stop-color="#0E1B2E"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6FA8FF"/>
+      <stop offset="1" stop-color="#2E7CF6" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <!-- Faíscas de velocidade -->
+    <linearGradient id="tracoAzul" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E7CF6" stop-opacity="0"/>
+      <stop offset="1" stop-color="#2E7CF6" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="tracoAmarelo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F5B93B" stop-opacity="0"/>
+      <stop offset="1" stop-color="#F5B93B" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="tracoBranco" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Hexágonos da identidade -->
+    <linearGradient id="hexAmarelo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD36B"/>
+      <stop offset="1" stop-color="#F5A524"/>
+    </linearGradient>
+    <linearGradient id="hexAzul" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4E93FF"/>
+      <stop offset="1" stop-color="#1B5ED8"/>
+    </linearGradient>
+
+    <!-- Vinheta final (foco no centro, escurece as bordas) -->
+    <radialGradient id="vinheta" cx="0.5" cy="0.46" r="0.78">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ===================== FUNDO ===================== -->
+  <rect width="1600" height="900" fill="url(#fundo)"/>
+  <rect width="1600" height="900" fill="url(#textura)"/>
+
+  <!-- Brilhos de ambiente -->
+  <ellipse cx="1120" cy="380" rx="560" ry="380" fill="url(#brilhoAzul)"/>
+  <ellipse cx="240" cy="760" rx="420" ry="300" fill="url(#brilhoAmarelo)"/>
+  <ellipse cx="1420" cy="820" rx="360" ry="240" fill="url(#brilhoAzul)" opacity="0.55"/>
+
+  <!-- ===================== TIPOGRAFIA FANTASMA (marca d'água) ===================== -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-weight="800" fill="#FFFFFF">
+    <text x="60" y="270" font-size="238" letter-spacing="10" opacity="0.05">LUCAS</text>
+    <text x="40" y="742" font-size="205" letter-spacing="8" opacity="0.055">EXPRESSO</text>
+    <text x="64" y="826" font-size="34" letter-spacing="7" opacity="0.10" font-weight="600">ENTREGAS E COLETAS • ARAPONGAS E REGIÃO</text>
+    <text x="1010" y="128" font-size="30" letter-spacing="6" opacity="0.10" font-weight="600">AGILIDADE EM CADA ENTREGA</text>
+  </g>
+
+  <!-- ===================== LINHAS DE VELOCIDADE ===================== -->
+  <g>
+    <rect x="120" y="352" width="470" height="9" rx="4.5" fill="url(#tracoBranco)" opacity="0.55"/>
+    <rect x="220" y="392" width="330" height="7" rx="3.5" fill="url(#tracoAmarelo)"/>
+    <rect x="60"  y="436" width="560" height="10" rx="5" fill="url(#tracoAzul)" opacity="0.8"/>
+    <rect x="300" y="482" width="280" height="6" rx="3" fill="url(#tracoBranco)" opacity="0.4"/>
+    <rect x="180" y="528" width="410" height="8" rx="4" fill="url(#tracoAmarelo)" opacity="0.75"/>
+    <rect x="380" y="572" width="230" height="6" rx="3" fill="url(#tracoAzul)" opacity="0.6"/>
+  </g>
+
+  <!-- ===================== HEXÁGONOS DA IDENTIDADE ===================== -->
+  <g opacity="0.9">
+    <!-- hexágono grande -->
+    <polygon points="286,214 253,244 253,304 286,334 319,304 319,244" fill="url(#hexAmarelo)" opacity="0.85"/>
+    <polygon points="286,232 264,252 264,296 286,316 308,296 308,252" fill="#0B1220" opacity="0.28"/>
+    <!-- hexágonos médios -->
+    <polygon points="470,300 445,323 445,369 470,392 495,369 495,323" fill="url(#hexAmarelo)" opacity="0.55"/>
+    <polygon points="360,420 341,438 341,474 360,492 379,474 379,438" fill="url(#hexAzul)" opacity="0.7"/>
+    <polygon points="540,470 525,484 525,512 540,526 555,512 555,484" fill="url(#hexAmarelo)" opacity="0.45"/>
+    <!-- contornos sutis -->
+    <polygon points="188,332 169,350 169,386 188,404 207,386 207,350" fill="none" stroke="#F5B93B" stroke-opacity="0.5" stroke-width="3"/>
+    <polygon points="600,360 583,376 583,408 600,424 617,408 617,376" fill="none" stroke="#6FA8FF" stroke-opacity="0.5" stroke-width="3"/>
+    <polygon points="1330,200 1305,223 1305,269 1330,292 1355,269 1355,223" fill="none" stroke="#F5B93B" stroke-opacity="0.35" stroke-width="3"/>
+  </g>
+
+  <!-- ===================== MOTO E MOTOBOY (silhueta estilizada) ===================== -->
+  <g transform="translate(880 560) rotate(-3)">
+
+    <!-- sombra de contato -->
+    <ellipse cx="150" cy="118" rx="330" ry="34" fill="#000000" opacity="0.38"/>
+
+    <!-- rastro luminoso atrás da moto -->
+    <path d="M-330 -60 L60 -84" stroke="url(#tracoAzul)" stroke-width="12" stroke-linecap="round" opacity="0.5"/>
+    <path d="M-300 -12 L40 -34" stroke="url(#tracoAmarelo)" stroke-width="9" stroke-linecap="round" opacity="0.45"/>
+
+    <!-- ===== rodas ===== -->
+    <!-- roda traseira -->
+    <circle cx="0" cy="0" r="92" fill="#0A111D" stroke="#243247" stroke-width="7"/>
+    <circle cx="0" cy="0" r="56" fill="#101C2E" stroke="#2E7CF6" stroke-width="3" stroke-opacity="0.55"/>
+    <g stroke="#6FA8FF" stroke-opacity="0.5" stroke-width="3">
+      <path d="M0 -56V56M-56 0H56M-40 -40L40 40M-40 40L40 -40"/>
+    </g>
+    <circle cx="0" cy="0" r="14" fill="#F5B93B"/>
+    <!-- roda dianteira -->
+    <circle cx="452" cy="-26" r="92" fill="#0A111D" stroke="#243247" stroke-width="7"/>
+    <circle cx="452" cy="-26" r="56" fill="#101C2E" stroke="#2E7CF6" stroke-width="3" stroke-opacity="0.55"/>
+    <g stroke="#6FA8FF" stroke-opacity="0.5" stroke-width="3">
+      <path d="M452 -82V30M396 -26H508M412 -66L492 14M412 14L492 -66"/>
+    </g>
+    <circle cx="452" cy="-26" r="14" fill="#F5B93B"/>
+
+    <!-- ===== corpo da moto ===== -->
+    <!-- escapamento -->
+    <path d="M-72 -34 L64 -26" stroke="#2A3A52" stroke-width="26" stroke-linecap="round"/>
+    <!-- cauda -->
+    <path d="M-86 -52 L24 -134 L132 -142 L158 -66 L58 -26 Z" fill="url(#corpoMoto)" stroke="#2B4265" stroke-width="4" stroke-linejoin="round"/>
+    <!-- banco e tanque -->
+    <path d="M58 -26 L158 -66 L262 -90 L312 -48 L214 -12 Z" fill="url(#corpoMoto)" stroke="#2B4265" stroke-width="4" stroke-linejoin="round"/>
+    <!-- carenagem dianteira -->
+    <path d="M262 -90 L344 -142 L438 -130 L470 -46 L372 -14 L312 -48 Z" fill="url(#corpoMoto)" stroke="#2B4265" stroke-width="4" stroke-linejoin="round"/>
+    <!-- detalhe âmbar na carenagem -->
+    <path d="M300 -74 L398 -118 L420 -108 L330 -58 Z" fill="#F5B93B" opacity="0.55"/>
+    <!-- guidão -->
+    <path d="M342 -152 L452 -138" stroke="#1B2A40" stroke-width="15" stroke-linecap="round"/>
+    <!-- suspensão dianteira -->
+    <path d="M452 -26 L412 -150" stroke="#16233A" stroke-width="17" stroke-linecap="round"/>
+    <!-- para-choque dianteiro -->
+    <path d="M392 -96 A 92 92 0 0 1 500 -68" fill="none" stroke="#1B2A40" stroke-width="15" stroke-linecap="round"/>
+    <!-- farol -->
+    <path d="M438 -130 L472 -112 L466 -78 L432 -92 Z" fill="#FFD36B" opacity="0.7"/>
+
+    <!-- ===== motoboy ===== -->
+    <!-- perna -->
+    <path d="M196 -128 L232 -62 L184 -22" fill="none" stroke="#0C1524" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- bota -->
+    <path d="M184 -22 L142 -8" stroke="#0A111D" stroke-width="20" stroke-linecap="round"/>
+    <!-- torso inclinado -->
+    <path d="M240 -206 C 296 -196 336 -168 352 -132 L272 -104 C 246 -138 218 -162 194 -176 Z" fill="#0C1524"/>
+    <!-- faixa reflexiva no colete -->
+    <path d="M244 -186 L318 -152" stroke="#6FA8FF" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+    <path d="M232 -160 L300 -128" stroke="#F5B93B" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+    <!-- braço até o guidão -->
+    <path d="M318 -158 L436 -142" fill="none" stroke="#0C1524" stroke-width="26" stroke-linecap="round"/>
+    <!-- luva -->
+    <circle cx="444" cy="-140" r="16" fill="#F5B93B"/>
+    <!-- capacete -->
+    <circle cx="232" cy="-238" r="58" fill="url(#capacete)" stroke="#39547C" stroke-width="5"/>
+    <!-- viseira -->
+    <path d="M242 -246 L296 -226 L278 -196 L238 -204 Z" fill="url(#visor)"/>
+    <!-- brilho do capacete -->
+    <path d="M198 -262 C 214 -282 250 -286 272 -272" fill="none" stroke="#6FA8FF" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- borda de luz na silhueta -->
+    <path d="M240 -206 C 296 -196 336 -168 352 -132" fill="none" stroke="#2E7CF6" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+    <path d="M24 -134 L132 -142" fill="none" stroke="#2E7CF6" stroke-width="5" stroke-linecap="round" opacity="0.45"/>
+  </g>
+
+  <!-- ===================== CHÃO LUMINOSO ===================== -->
+  <ellipse cx="1030" cy="702" rx="520" ry="26" fill="#2E7CF6" opacity="0.16"/>
+  <path d="M420 700 H1600" stroke="#6FA8FF" stroke-opacity="0.22" stroke-width="3"/>
+
+  <!-- ===================== VINHETA FINAL ===================== -->
+  <rect width="1600" height="900" fill="url(#vinheta)"/>
+</svg>

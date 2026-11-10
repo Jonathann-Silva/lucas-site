@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Mapa ilustrativo da área de cobertura (provisório)">
+  <!-- ============================================================
+       MAPA ILUSTRATIVO DA ÁREA DE COBERTURA
+       Mapa genérico e provisório. Substitua por um mapa real
+       (print do Google Maps, mapa da região ou ilustração oficial)
+       atualizando o caminho em index.html.
+       ============================================================ -->
+  <defs>
+    <linearGradient id="mp-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F2E52"/>
+      <stop offset="1" stop-color="#061428"/>
+    </linearGradient>
+    <radialGradient id="mp-glow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#2E7CF6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2E7CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="mp-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="mp-pin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC24B"/>
+      <stop offset="1" stop-color="#F5820B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#mp-bg)"/>
+  <rect width="1200" height="760" fill="url(#mp-grid)"/>
+  <ellipse cx="600" cy="360" rx="520" ry="330" fill="url(#mp-glow)"/>
+
+  <!-- Área de cobertura estilizada -->
+  <path d="M250 470C200 380 240 250 350 195 470 135 610 145 730 185c130 43 235 40 300 120 62 76 60 190-15 255-83 72-225 82-355 78-145-5-335-70-410-168z"
+        fill="#2E7CF6" fill-opacity="0.14" stroke="#2E7CF6" stroke-opacity="0.55" stroke-width="3" stroke-dasharray="12 10"/>
+  <path d="M330 430c-35-70-8-165 72-205 88-44 190-38 278-8 95 32 172 30 220 82 46 50 44 132-12 178-62 52-166 60-264 56-108-4-250-46-294-103z"
+        fill="#F5A524" fill-opacity="0.10" stroke="#F5A524" stroke-opacity="0.45" stroke-width="2.5" stroke-dasharray="8 8"/>
+
+  <!-- Rotas estilizadas -->
+  <g stroke="#8FC0FF" stroke-opacity="0.5" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="10 12">
+    <path d="M420 420C500 330 590 300 700 330"/>
+    <path d="M700 330C790 360 830 430 800 500"/>
+    <path d="M420 420C470 500 570 540 660 520"/>
+    <path d="M660 520C720 505 770 505 800 500"/>
+  </g>
+
+  <!-- Pins de cidades (exemplos visuais) -->
+  <g>
+    <g transform="translate(400,380)">
+      <path d="M20 0C9 0 0 9 0 20c0 15 20 40 20 40s20-25 20-40C40 9 31 0 20 0z" fill="url(#mp-pin)"/>
+      <circle cx="20" cy="20" r="8" fill="#061428"/>
+    </g>
+    <g transform="translate(680,290)">
+      <path d="M20 0C9 0 0 9 0 20c0 15 20 40 20 40s20-25 20-40C40 9 31 0 20 0z" fill="url(#mp-pin)"/>
+      <circle cx="20" cy="20" r="8" fill="#061428"/>
+    </g>
+    <g transform="translate(780,460)">
+      <path d="M20 0C9 0 0 9 0 20c0 15 20 40 20 40s20-25 20-40C40 9 31 0 20 0z" fill="url(#mp-pin)"/>
+      <circle cx="20" cy="20" r="8" fill="#061428"/>
+    </g>
+    <g transform="translate(640,500)">
+      <path d="M20 0C9 0 0 9 0 20c0 15 20 40 20 40s20-25 20-40C40 9 31 0 20 0z" fill="url(#mp-pin)"/>
+      <circle cx="20" cy="20" r="8" fill="#061428"/>
+    </g>
+    <g transform="translate(500,250)">
+      <path d="M20 0C9 0 0 9 0 20c0 15 20 40 20 40s20-25 20-40C40 9 31 0 20 0z" fill="#2E7CF6"/>
+      <circle cx="20" cy="20" r="8" fill="#061428"/>
+    </g>
+  </g>
+
+  <!-- Legenda -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="60" y="80" font-size="30" font-weight="700" letter-spacing="3" fill="#FFFFFF" opacity="0.9">MAPA ILUSTRATIVO DE COBERTURA</text>
+    <text x="60" y="118" font-size="20" fill="#BFD3EA" opacity="0.85">Área de atendimento provisória — substituir pelo mapa real da Lucas Expresso</text>
+
+    <g transform="translate(60, 640)">
+      <rect x="0" y="0" width="330" height="76" rx="12" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <circle cx="36" cy="38" r="11" fill="url(#mp-pin)"/>
+      <text x="62" y="33" font-size="18" fill="#FFFFFF" opacity="0.9">Cidade / base principal</text>
+      <text x="62" y="58" font-size="16" fill="#BFD3EA" opacity="0.8">Locais atendidos pela empresa</text>
+    </g>
+    <g transform="translate(410, 640)">
+      <rect x="0" y="0" width="330" height="76" rx="12" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <path d="M20 76 20 76" fill="none"/>
+      <circle cx="36" cy="38" r="11" fill="none" stroke="#F5A524" stroke-width="3" stroke-dasharray="5 5"/>
+      <text x="62" y="33" font-size="18" fill="#FFFFFF" opacity="0.9">Região de abrangência</text>
+      <text x="62" y="58" font-size="16" fill="#BFD3EA" opacity="0.8">Alcance total dos atendimentos</text>
+    </g>
+  </g>
+</svg>
